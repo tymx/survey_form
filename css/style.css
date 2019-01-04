@@ -63,14 +63,14 @@ ul{
 
 .container form optgroup{
     text-align: left;
-    font-size: 3em;
+    font-size: 1.5em;
 }
 
 .container form button{
     background-color: #DB996A;
     color: #663B40;
     border: 0em;
-    font-size: em;
+    font-size: 1em;
 }
 
 .container form button:hover,
