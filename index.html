@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Karla|Montserrat" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">    
+    <title>Relaxation Survey</title>
+    <h1></h1>
+</head>
+<body>
+    <div class="container">
+        <div class="des">
+            <h1 id="title">Relaxation Survey Form</h1>
+            <p id="description">There are many moments in our lives where we feel stressed from work, school, and day to day things. We all need some way to calm down and relax from these stressful moments and tasks in our lives. Take this survey and find out what relaxes you.</p>
+        </div>
+        <div>
+            <form action="" id="survey-form">
+                <p>
+                    <label id="name-label">Name: </label>
+                    <input type="text" id="name" placeholder="Enter Full Name" required>
+                </p>
+                <p>
+                    <label id="email-label">Email: </label>
+                    <input type="email" id="email" placeholder="Enter Email" required>
+                </p>
+                <p>
+                    <label id="number-label">Age: </label>
+                    <input type="number" id="number" min="3" max="100" placeholder="Enter Age">
+                </p>
+                <p>
+                    <label>How hard is it for you to relax on regular occasions?</label>
+                    <select name="dropdown" id="dropdown">
+                        <optgroup>
+                                <option value="empty"></option>
+                                <option value="1">Extremely Difficult</option>
+                                <option value="2">Hard</option>
+                                <option value="3">Easy</option>
+                                <option value="4">Extremely Easy</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    Which places(or actions) out of the list of options would be the place(or thing) you would go (or do) to relax?
+                    <div class="radio-buttons">
+                        <ul>
+                            <li><label for="opt1"><input type="radio" value="1" name="radio-buttons">Beach</label></li>
+                            <li><label for="opt2"><input type="radio" value="2" name="radio-buttons">Mountains</label></li>
+                            <li><label for="opt3"><input type="radio" value="3" name="radio-buttons">Going on a Walk</label></li>
+                            <li><label for="opt4"><input type="radio" value="4" name="radio-buttons">Lounging at Home</label></li>
+                        </ul>
+                    </div>
+                </p>
+                <p>
+                    Which type of music relaxes you?
+                    <div class="checkbox">
+                        <ul>
+                            <li><label for="opt1"><input type="checkbox" value="1">Classical</label></li>
+                            <li><label for="opt2"><input type="checkbox" value="2">Jazz</label></li>
+                            <li><label for="opt3"><input type="checkbox" value="3">Country Music</label></li>
+                            <li><label for="opt4"><input type="checkbox" value="4">Pop Music</label></li>
+                            <li><label for="opt3"><input type="checkbox" value="5">No Music; just pure silence</label></li>
+                        </ul>
+                    </div>
+                </p>
+                <p>
+                    <label>Leave comments about the Survey:</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                </p>
+                <p class="button">
+                    <button type="submit" id="submit">Submit</button>
+                </p>
+            </form>
+        </div>
+    </div>
+    <!--Script used to test if it follows freecodecamp-->
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+</html>

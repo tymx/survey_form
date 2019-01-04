@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    background: url(../img/dawn-dust-landscape-5309.jpg) no-repeat center center fixed;
+    background-size: cover; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    line-height: 1.6;
+    padding: 1em;
+}
+
+.container{
+    background-color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 1000px;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+ul{
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px;
+}
+
+.container form{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.container #title{
+    text-align: center;
+    font-size: 2em;
+    color: #46262B;
+    font-family: 'Karla', sans-serif;
+}
+
+.container form label{
+    display: block;
+}
+
+.container form button,
+.container form input[type="text"],
+.container form input[type="email"],
+.container form input[type="number"],
+.container form select,
+.container form textarea{
+    width: 100%;
+    padding: 1em;
+}
+
+.container form optgroup{
+    text-align: left;
+    font-size: 3em;
+}
+
+.container form button{
+    background-color: #DB996A;
+    color: #663B40;
+    border: 0em;
+    font-size: em;
+}
+
+.container form button:hover,
+.container form button:focus{
+    background-color: #663B40;
+    color: #DB996A;
+}
+
+@media only screen and (min-width: 768px) {
+    .radio-buttons ul,
+    .checkbox ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container form button{
+        font-size: 1.2em;
+    }
+  }
